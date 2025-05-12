@@ -156,10 +156,7 @@ O projeto atende aos requisitos acadêmicos de **Conceito C, B e A** (Opção 3 
 
 ##  Tutorial em Vídeo
 
-<video controls width="640" poster="public/video-poster.png">
-  <source src="public/Tutorial.webm" type="video/webm">
-  Seu navegador não suporta reprodução de vídeos.
-</video>
+public/Tutorial.webm
 
 
 ---
