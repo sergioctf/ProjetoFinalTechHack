@@ -157,5 +157,4 @@ O projeto atende aos requisitos acadêmicos de **Conceito C, B e A** (Opção 3 
 
 ##  Licença
 
-Este projeto está sob a **MIT License**. Veja o arquivo [LICENSE](LICENSE) para detalhes.
-
+Este projeto está sob a **MIT License**. 
