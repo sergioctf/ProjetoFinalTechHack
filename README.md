@@ -154,9 +154,12 @@ O projeto atende aos requisitos acadêmicos de **Conceito C, B e A** (Opção 3 
 ---
 
 
-##  Tutorial em Vídeo
+## Tutorial em Vídeo
 
-public/Tutorial.webm
+Assista ao tutorial completo no YouTube:
+
+[![Veja o Tutorial](https://img.youtube.com/vi/7oXG3MxCOsk/0.jpg)](https://youtu.be/7oXG3MxCOsk)
+
 
 
 ---
