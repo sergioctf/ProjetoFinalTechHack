@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente
+.env
+.env.*.local
+
+# Build/output
+dist/
+build/
+
+# Modelos e dados gerados
+/model/
+/data/
+
+# Logs e cobertura de testes
+coverage/
+*.log
+
+# IDEs e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Arquivos estáticos gerados
+public/build/
