@@ -1,4 +1,4 @@
-# SSS Phish Detector - PF de Tech Hack - Sérgio Carmelo
+# PF de Tech Hack - Sérgio Carmelo
 
 **SSS Phish Detector** é uma ferramenta web completa para **detecção de phishing**, combinando **verificações heurísticas avançadas**, integração com **listas de domínios maliciosos** e um **modelo de Machine Learning** treinado para avaliar o risco de qualquer URL.
 
