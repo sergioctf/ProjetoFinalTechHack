@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "18": "^0.0.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "fast-levenshtein": "^3.0.0",
+    "geoip-lite": "^1.4.10",
+    "jsdom": "^26.1.0",
+    "node-static": "^0.7.11",
+    "ssl-checker": "^2.0.10",
+    "whois-json": "^2.0.4"
+  }
+}

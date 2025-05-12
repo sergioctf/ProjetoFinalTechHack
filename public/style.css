@@ -1,0 +1,167 @@
+/* RESET & BASE */
+* { box-sizing: border-box; margin:0; padding:0 }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height:1.5;
+}
+.container {
+  max-width:600px; margin:0 auto; padding:16px;
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:40px 16px;
+  background:linear-gradient(135deg, #1a73e8 0%, #1558b0 100%);
+  color:#fff;
+  border-radius:12px;
+  margin-bottom:32px;
+}
+.hero__logo {
+  width:240px;         /* <--- tamanho reduzido */
+  max-height:180px;
+  margin-bottom:0px;
+}
+.hero__title {
+  font-size:clamp(1.75rem,6vw,2.5rem);
+  font-weight:700;
+}
+.hero__subtitle {
+  font-size:clamp(0.9rem,3vw,1.1rem);
+  opacity:.85;
+  margin-top:8px;
+}
+
+/* CARDS */
+.card {
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  padding:24px;
+  margin-bottom:24px;
+}
+
+/* INPUT */
+.input-group {
+  display:flex; gap:12px;
+}
+.input-group input {
+  flex:1;
+  padding:14px 16px;
+  font-size:1rem;
+  border:1px solid #ccd0d5;
+  border-radius:6px;
+  transition:border-color .2s, box-shadow .2s;
+}
+.input-group input:focus {
+  border-color:#1558b0;
+  box-shadow:0 0 0 3px rgba(26,115,232,0.2);
+}
+.input-group button {
+  padding:14px 22px;
+  font-size:1rem;
+  background:#1a73e8;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:transform .1s, box-shadow .2s;
+}
+.input-group button:hover {
+  transform:translateY(-2px);
+  box-shadow:0 4px 8px rgba(26,115,232,0.3);
+}
+
+/* RESULT HEADING */
+.card--result .card__heading {
+  font-size:1.5rem; color:#1a73e8; margin-bottom:20px;
+}
+
+/* RESULT ROW */
+.result-row {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:16px;
+}
+.label { font-weight:600; color:#555 }
+.score-number { font-weight:700; font-size:1.25rem }
+
+/* RISK LABEL */
+.risk-label {
+  font-weight:600; padding:6px 14px; border-radius:20px;
+  font-size:.95rem; min-width:80px; text-align:center; display:inline-block;
+}
+.risk-low    { background:#d0e8d0; color:#2a5d2a }
+.risk-medium { background:#fef3d8; color:#806030 }
+.risk-high   { background:#f8d0d0; color:#7a2a2a }
+
+/* RISK EXPLANATION BOX */
+.risk-explanation {
+  background:#e8f0fe;
+  border-left:4px solid #1a73e8;
+  padding:12px 16px; border-radius:4px;
+  margin:16px 0; color:#1a4558; font-size:.95rem;
+  line-height:1.4;
+}
+
+/* HEURISTICS GRID */
+.heuristics-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px; list-style:none; margin:0; padding:0;
+}
+.heuristic-item {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:12px 16px; border-radius:6px; font-size:.95rem;
+  background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.03);
+  border-left:4px solid transparent;
+}
+.heuristic-item.true  { border-color:#2a5d2a; background:#e6f4ea }
+.heuristic-item.false { border-color:#7a2a2a; background:#fdecea }
+.heuristic-item.null  { border-color:#888;    background:#f5f5f5 }
+
+.heuristic-label { font-weight:600; color:#333 }
+.heuristic-value {
+  font-weight:700; display:flex; align-items:center;
+}
+.heuristic-value::before {
+  content:' '; display:inline-block; margin-right:6px; font-size:1.1rem;
+}
+.heuristic-item.true  .heuristic-value::before { content:'✔'; color:#2a5d2a }
+.heuristic-item.false .heuristic-value::before { content:'✖'; color:#7a2a2a }
+.heuristic-item.null  .heuristic-value::before { content:'–'; color:#888 }
+
+/* EXPLANATIONS LIST */
+.grid-list { list-style:none; margin:0; padding:0 }
+.grid-list li {
+  background:#fafbfd; margin-bottom:8px; padding:10px 14px;
+  border-left:4px solid #ccd0d5; border-radius:4px;
+  color:#555; font-size:.95rem;
+}
+
+/* FOOTER */
+.footer { text-align:center; font-size:.85rem; color:#888; margin-top:16px }
+
+/* RESPONSIVE */
+@media(max-width:480px){
+  .input-group { flex-direction:column }
+  .input-group button{ width:100% }
+  .heuristics-grid { grid-template-columns:1fr }
+}
+
+.ml-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.ml-table th, .ml-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.ml-table th {
+  background: #f4f6fa;
+  font-weight: 600;
+}
+

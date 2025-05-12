@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phish Detector</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- force reload: adicionamos ?v=2 -->
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO BANNER -->
+    <header class="hero">
+      <img src="logo.png" alt="Logo" class="hero__logo" />
+      <h1 class="hero__title">Phish Detector</h1>
+      <p class="hero__subtitle">
+        Verifique o risco de phishing em qualquer URL em um clique
+      </p>
+    </header>
+
+    <!-- CARD DE INPUT -->
+    <section class="card card--input">
+      <div class="input-group">
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="Cole a URL aqui (ex: https://exemplo.com)"
+        />
+        <button id="checkButton">Verificar</button>
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section id="resultSection" class="card card--result" hidden>
+      <h2 class="card__heading">Resultado da Verificação</h2>
+
+      <div class="result-row">
+        <span class="label">Nível de Risco</span>
+        <span id="riskLabel" class="risk-label">—</span>
+      </div>
+      <div class="result-row">
+        <span class="label">Score</span>
+        <span id="riskScore" class="score-number">—</span>
+      </div>
+
+      <div id="riskExplanation" class="risk-explanation"></div>
+
+      <div class="subsection">
+        <h3>Heurísticas Avaliadas</h3>
+        <ul id="heuristicsList" class="heuristics-grid"></ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Observações</h3>
+        <ul id="explanationList" class="grid-list"></ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© 2025 Phish Detector – Seus dados, sua segurança</small>
+    </footer>
+  </div>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
